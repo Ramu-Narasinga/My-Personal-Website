@@ -1,4 +1,4 @@
-interface CustomH1Props {
+type CustomH1Props= {
   className: string;
   children: React.ReactNode;
 }

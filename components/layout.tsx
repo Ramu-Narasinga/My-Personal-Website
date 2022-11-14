@@ -1,8 +1,12 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import CustomH1 from './custom-h1'
+import styles from '../styles/layout.module.css'
+import Sidebar from './sidebar'
 
-export default function Layout() {
+type LayoutProps  = {
+  children: React.ReactNode
+}
+
+export default function Layout(layoutProps: LayoutProps) {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,11 +16,8 @@ export default function Layout() {
       </Head>
 
       <main className={styles.main}>
-        <CustomH1 className={styles.title}>
-          Hi,
-          I am Ramu Narasinga
-        </CustomH1>
-
+        <Sidebar />
+        {layoutProps.children}
       </main>
     </div>
   )
