@@ -5,10 +5,10 @@ type CustomH1Props= {
 
 export default function CustomH1(CustomH1Props: CustomH1Props) {
   return (
-    <h1>
-      &lt;h1&gt;
-      {CustomH1Props.children}
-      &lt;\h1&gt;
-    </h1>
+    <>
+      <div className="h1ThemedTag">&lt;h1&gt;</div>
+      <h1 className="h1ThemedContent">{CustomH1Props.children}</h1>
+      <div className="h1ThemedTag">&lt;\h1&gt;</div>
+    </>
   );
 }

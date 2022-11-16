@@ -16,8 +16,22 @@ export default function Layout(layoutProps: LayoutProps) {
       </Head>
 
       <main className={styles.main}>
+
         <Sidebar />
-        {layoutProps.children}
+
+        <div className='htmlThemedContainer'>
+          <div className='htmlThemedOpenTags'>
+            <div className='htmlThemedTag'>&lt;html&gt;</div>
+            <div className='bodyThemedTag'>&lt;body&gt;</div>
+          </div>
+
+          {layoutProps.children}
+
+          <div className='htmlThemedCloseTags'>
+            <div className='bodyThemedTag'>&lt;/body&gt;</div>
+            <div className='htmlThemedTag'>&lt;/html&gt;</div>
+          </div>
+        </div>
       </main>
     </div>
   )

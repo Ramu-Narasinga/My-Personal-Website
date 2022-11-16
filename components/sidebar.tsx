@@ -12,7 +12,7 @@ export default function Sidebar() {
     label: 'About',
     navTo: '/about'
   }, {
-    label: 'My Skills',
+    label: 'Skills and Certification',
     navTo: '/my-skills'
   }, {
     label: 'Experience',
