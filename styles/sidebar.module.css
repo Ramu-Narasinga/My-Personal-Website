@@ -2,12 +2,12 @@
   width: 20%;
 }
 
-.sidenav-item {
+.sidenavItem {
   display: block;
   border-bottom: 2px solid #696767;
   padding: 10px 0;
 }
 
-.sidenav-item:active {
-  border-bottom: 4px solid #14C2A3;
+.activeSidenavItem {
+  background:#14C2A3;
 }

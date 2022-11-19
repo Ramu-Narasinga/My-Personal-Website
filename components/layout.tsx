@@ -7,6 +7,7 @@ type LayoutProps  = {
 }
 
 export default function Layout(layoutProps: LayoutProps) {
+
   return (
     <div className={styles.container}>
       <Head>

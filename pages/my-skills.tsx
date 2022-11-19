@@ -1,15 +1,13 @@
-import CustomH1 from '../components/custom-h1'
 import Layout from '../components/layout'
-
-import styles from '../styles/Home.module.css'
+import MyCertificationsContainer from '../components/my-certificatiions'
+import MySkillsContainer from '../components/my-skills-container'
 
 export default function MySkills() {
+
   return (
     <Layout>
-      <CustomH1 className={styles.title}>
-          Hi,
-          I am Ramu Narasinga
-        </CustomH1>
+      <MySkillsContainer></MySkillsContainer>
+      <MyCertificationsContainer></MyCertificationsContainer>
     </Layout>
   )
 }

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useState } from 'react';
+
 import styles from '../styles/sidebar.module.css';
 
 type SideNavItem = {
@@ -8,7 +10,12 @@ type SideNavItem = {
 
 export default function Sidebar() {
 
+  const [activeSidebar, setActiveSidebar] = useState<String>('Home');
+
   const sideNavItems: SideNavItem[] = [{
+    label: 'Home',
+    navTo: '/'
+  }, {
     label: 'About',
     navTo: '/about'
   }, {
@@ -28,12 +35,21 @@ export default function Sidebar() {
     navTo: '/resume'
   }]
 
+  const handleSidenavClick = (sideNavItem: SideNavItem) => {
+    console.log("sideNavItem:", sideNavItem)
+    setActiveSidebar(sideNavItem.label);
+  }
+
   return (
     <div className={styles.sidebar}>
       {
         sideNavItems.map(sideNavItem => <Link 
           href={sideNavItem.navTo}
-          className={styles['sidenav-item']}
+          className={
+            activeSidebar == sideNavItem.label ? `${styles.activeSidenavItem} ${styles.sidenavItem}` :
+            `${styles.sidenavItem}`
+          }
+          onClick={() => handleSidenavClick(sideNavItem)}
         >{sideNavItem.label}</Link>)
       }
     </div>
