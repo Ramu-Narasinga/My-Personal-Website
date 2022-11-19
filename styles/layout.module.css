@@ -1,0 +1,16 @@
+.container {
+  padding: 0 2rem;
+  background: #323232;
+  color: white;
+  height: inherit;
+}
+
+.main {
+  height: 100%;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}

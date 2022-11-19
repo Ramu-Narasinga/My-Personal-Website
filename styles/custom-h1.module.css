@@ -1,0 +1,12 @@
+.h1ThemedTag {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.h1ThemedTag {
+  margin-left: 30px;
+}
+
+.h1ThemedContent {
+  margin-left: 40px;
+}

@@ -1,0 +1,13 @@
+.sidebar {
+  width: 20%;
+}
+
+.sidenavItem {
+  display: block;
+  border-bottom: 2px solid #696767;
+  padding: 10px 0;
+}
+
+.activeSidenavItem {
+  background:#14C2A3;
+}
