@@ -8,6 +8,6 @@ export default function MySkills() {
     <Layout>
       <MySkillsContainer></MySkillsContainer>
       <MyCertificationsContainer></MyCertificationsContainer>
-    </Layout>
+    </Layout> 
   )
 }
