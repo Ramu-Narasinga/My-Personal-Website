@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from '../styles/sidebar.module.css';
 
@@ -39,6 +39,29 @@ export default function Sidebar() {
     console.log("sideNavItem:", sideNavItem)
     setActiveSidebar(sideNavItem.label);
   }
+
+  // TODO: find a better way to set active tab
+  const handleActiveSideBar = (activeLink: String) => {
+    if (activeLink.toLowerCase().includes('home')) {
+      setActiveSidebar(sideNavItems[0].label);
+    } else if (activeLink.toLowerCase().includes('about')) {
+      setActiveSidebar(sideNavItems[1].label);
+    } else if (activeLink.toLowerCase().includes('skills')) {
+      setActiveSidebar(sideNavItems[2].label);
+    } else if (activeLink.toLowerCase().includes('experience')) {
+      setActiveSidebar(sideNavItems[3].label);
+    } else if (activeLink.toLowerCase().includes('contact')) {
+      setActiveSidebar(sideNavItems[4].label);
+    } else if (activeLink.toLowerCase().includes('blog')) {
+      setActiveSidebar(sideNavItems[5].label);
+    } else if (activeLink.toLowerCase().includes('resume')) {
+      setActiveSidebar(sideNavItems[6].label);
+    }
+  }
+
+  useEffect(() => {
+    handleActiveSideBar(window.location.pathname.split('/')[1]);
+  }, []);
 
   return (
     <div className={styles.sidebar}>

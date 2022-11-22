@@ -42,7 +42,7 @@ export default function MySkillsContainer() {
   }]
 
   return (
-    <>
+    <div className={mySkillsStyles.skillsWrapper}>
     <CustomH1 className={styles.title}>
         My Skills
       </CustomH1>
@@ -54,6 +54,6 @@ export default function MySkillsContainer() {
         }
       </div>
       <div className={divThemedStyles.divThemedTag}>&lt;\div&gt;</div>
-    </>
+    </div>
   );
 }
