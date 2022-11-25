@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/layout.module.css'
-import Sidebar from './sidebar'
+import styles from './layout.module.css'
+import Sidebar from '../sidebar/sidebar'
 
 type LayoutProps  = {
   children: React.ReactNode

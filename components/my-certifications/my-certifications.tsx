@@ -1,8 +1,6 @@
-import styles from '../styles/custom-para.module.css'
-import CustomH1 from '../components/custom-h1'
-import divThemedStyles from '../styles/custom-div.module.css'
-import mySkillsStyles from '../styles/my-skills.module.css'
-import certificationsStyles from '../styles/my-certifications.module.css'
+import CustomH1 from '../custom-h1/custom-h1'
+import divThemedStyles from '../../styles/custom-div.module.css'
+import myCertificationsStyles from './my-certifications.module.css'
 import MyCertificationsCard from './my-certifications-card'
 
 export default function MyCertificationsContainer() {
@@ -16,13 +14,13 @@ export default function MyCertificationsContainer() {
   }];
 
   return (
-    <div className={certificationsStyles.certificationsWrapper}>
-    <CustomH1 className={styles.title}>
+    <div className={myCertificationsStyles.certificationsWrapper}>
+      <CustomH1>
         My Certification(s)
       </CustomH1>
       
       <div className={divThemedStyles.divThemedTag}>&lt;div&gt;</div>
-      <div className={mySkillsStyles.skillsContainer}>
+      <div className={myCertificationsStyles.certificationContainer}>
         {
           myCerts.map(myCert => <MyCertificationsCard myCert={myCert}></MyCertificationsCard>)
         }

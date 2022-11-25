@@ -1,7 +1,6 @@
-import styles from '../styles/custom-h1.module.css';
+import styles from './custom-h1.module.css';
 
 type CustomH1Props= {
-  className: string;
   children: React.ReactNode;
 }
 

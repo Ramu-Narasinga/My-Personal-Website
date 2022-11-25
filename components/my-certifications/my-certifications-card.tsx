@@ -1,4 +1,4 @@
-import mySkillsStyles from '../styles/my-skills.module.css'
+import myCertificationsStyles from './my-certifications.module.css'
 
 type MyCertification = {
   title: String;
@@ -27,10 +27,10 @@ export default function MyCertificationsCard(myCertificationsCardProps: MyCertif
 
   return (
     <>      
-        <div className={mySkillsStyles.skillCard}>
-          <div className={mySkillsStyles.skillTitle}>{title}</div>
-          <div className={mySkillsStyles.skill}>{certification.title}</div>          
-          <div className={mySkillsStyles.skill}>{certification.caption}</div>          
+        <div className={myCertificationsStyles.certificationCard}>
+          <div className={myCertificationsStyles.certificationTitle}>{title}</div>
+          <div className={myCertificationsStyles.certification}>{certification.title}</div>          
+          <div className={myCertificationsStyles.certification}>{certification.caption}</div>          
         </div>
     </>
   );

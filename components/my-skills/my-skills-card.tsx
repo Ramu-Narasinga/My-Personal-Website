@@ -1,5 +1,4 @@
-import styles from '../styles/custom-para.module.css'
-import mySkillsStyles from '../styles/my-skills.module.css'
+import mySkillsStyles from './my-skills.module.css'
 import { MySkillCard } from './my-skills-card-types'
 
 type MySkillsCardProps = {

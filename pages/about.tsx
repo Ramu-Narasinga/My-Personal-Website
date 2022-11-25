@@ -1,5 +1,5 @@
-import CustomH1 from '../components/custom-h1'
-import Layout from '../components/layout'
+import CustomH1 from '../components/custom-h1/custom-h1'
+import Layout from '../components/layout/layout'
 import CustomPara from '../components/custom-para'
 
 import styles from '../styles/Home.module.css'
@@ -8,8 +8,7 @@ import aboutStyles from '../styles/about.module.css'
 export default function About() {
   return (
     <Layout>
-      <div>
-        <CustomH1 className={styles.title}>
+        <CustomH1>
           About me
         </CustomH1>
         <CustomPara className={styles.description}>
@@ -19,7 +18,6 @@ export default function About() {
           
           <div className={aboutStyles.aboutMePara}>Let’s build something awesome.</div>
         </CustomPara>
-      </div>
     </Layout>
   )
 }

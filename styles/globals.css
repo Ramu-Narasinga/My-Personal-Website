@@ -28,7 +28,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: fit-content;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+  margin-left: 20%;
 }
 
 .htmlThemedTag, 
