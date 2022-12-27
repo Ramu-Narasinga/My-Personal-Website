@@ -1,7 +1,6 @@
-import CustomH1 from '../components/custom-h1/custom-h1'
+import CustomH1 from '../components/themed-tags/custom-h1/custom-h1'
 import Layout from '../components/layout/layout'
 
-import styles from '../styles/Home.module.css'
 import contactStyles from '../styles/contact.module.css'
 
 export default function Contact() {

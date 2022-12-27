@@ -1,6 +1,6 @@
-import CustomH1 from '../components/custom-h1/custom-h1'
+import CustomH1 from '../components/themed-tags/custom-h1/custom-h1'
 import Layout from '../components/layout/layout'
-import CustomPara from '../components/custom-para'
+import CustomPara from '../components/themed-tags/custom-para/custom-para'
 
 import styles from '../styles/Home.module.css'
 import aboutStyles from '../styles/about.module.css'

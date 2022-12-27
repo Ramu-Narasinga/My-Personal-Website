@@ -1,5 +1,5 @@
-import CustomH1 from '../custom-h1/custom-h1'
-import divThemedStyles from '../../styles/custom-div.module.css'
+import CustomH1 from '../themed-tags/custom-h1/custom-h1'
+import divThemedStyles from '../themed-tags/custom-div/custom-div.module.css'
 import myCertificationsStyles from './my-certifications.module.css'
 import MyCertificationsCard from './my-certifications-card'
 
