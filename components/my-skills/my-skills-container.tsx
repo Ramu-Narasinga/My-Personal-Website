@@ -1,8 +1,7 @@
-import styles from '../styles/custom-para.module.css'
-import CustomH1 from '../components/custom-h1'
-import divThemedStyles from '../styles/custom-div.module.css'
-import MySkillsCard from '../components/my-skills-card'
-import mySkillsStyles from '../styles/my-skills.module.css'
+import CustomH1 from '../themed-tags/custom-h1/custom-h1'
+import divThemedStyles from '../themed-tags/custom-div/custom-div.module.css'
+import MySkillsCard from './my-skills-card'
+import mySkillsStyles from './my-skills.module.css'
 
 export default function MySkillsContainer() {
 
@@ -43,7 +42,7 @@ export default function MySkillsContainer() {
 
   return (
     <div className={mySkillsStyles.skillsWrapper}>
-    <CustomH1 className={styles.title}>
+      <CustomH1>
         My Skills
       </CustomH1>
       

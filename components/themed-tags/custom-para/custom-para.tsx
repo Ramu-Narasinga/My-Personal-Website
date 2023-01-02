@@ -1,4 +1,4 @@
-import styles from '../styles/custom-para.module.css'
+import styles from './custom-para.module.css'
 
 type CustomPProps= {
   className: string;

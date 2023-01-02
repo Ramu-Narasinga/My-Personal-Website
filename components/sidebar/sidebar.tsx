@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import styles from '../styles/sidebar.module.css';
+import styles from './sidebar.module.css';
 
 type SideNavItem = {
   label: string;
@@ -20,7 +20,7 @@ export default function Sidebar() {
     navTo: '/about'
   }, {
     label: 'Skills and Certification',
-    navTo: '/my-skills'
+    navTo: '/my-skills-and-certifications'
   }, {
     label: 'Experience',
     navTo: '/experience'
