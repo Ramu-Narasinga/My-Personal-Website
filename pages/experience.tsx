@@ -7,8 +7,7 @@ export default function Experience() {
   return (
     <Layout>
       <CustomH1>
-          Hi,
-          I am Ramu Narasinga
+         My professional experience.
         </CustomH1>
     </Layout>
   )

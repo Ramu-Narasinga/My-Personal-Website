@@ -3,10 +3,15 @@ import styles from './layout.module.css'
 import Sidebar from '../sidebar/sidebar'
 
 type LayoutProps  = {
-  children: React.ReactNode
+  children: React.ReactNode,
+  className?: string
 }
 
 export default function Layout(layoutProps: LayoutProps) {
+
+  const {
+    className
+  } = layoutProps;
 
   return (
     <div className={styles.container}>
@@ -20,7 +25,7 @@ export default function Layout(layoutProps: LayoutProps) {
 
         <Sidebar />
 
-        <div className='htmlThemedContainer'>
+        <div className={'htmlThemedContainer ' + className}>
           <div className='htmlThemedOpenTags'>
             <div className='htmlThemedTag'>&lt;html&gt;</div>
             <div className='bodyThemedTag'>&lt;body&gt;</div>
