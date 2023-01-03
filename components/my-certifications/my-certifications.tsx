@@ -2,6 +2,7 @@ import CustomH1 from '../themed-tags/custom-h1/custom-h1'
 import divThemedStyles from '../themed-tags/custom-div/custom-div.module.css'
 import myCertificationsStyles from './my-certifications.module.css'
 import MyCertificationsCard from './my-certifications-card'
+import CustomDiv from '../themed-tags/custom-div/custom-div';
 
 export default function MyCertificationsContainer() {
 
@@ -19,13 +20,15 @@ export default function MyCertificationsContainer() {
         My Certification(s)
       </CustomH1>
       
-      <div className={divThemedStyles.divThemedTag}>&lt;div&gt;</div>
-      <div className={myCertificationsStyles.certificationContainer}>
-        {
-          myCerts.map(myCert => <MyCertificationsCard myCert={myCert}></MyCertificationsCard>)
-        }
-      </div>
-      <div className={divThemedStyles.divThemedTag}>&lt;\div&gt;</div>
+      <CustomDiv>
+      {/* <div className={divThemedStyles.divThemedTag}>&lt;div&gt;</div> */}
+        <div className={myCertificationsStyles.certificationContainer}>
+          {
+            myCerts.map(myCert => <MyCertificationsCard myCert={myCert}></MyCertificationsCard>)
+          }
+        </div>
+      {/* <div className={divThemedStyles.divThemedTag}>&lt;\div&gt;</div> */}
+      </CustomDiv>
     </div>
   );
 }
