@@ -12,7 +12,6 @@ export default function Experience() {
          My professional experience.
       </CustomH1>
       <CustomDiv>
-        About to add experience
         {
           experience.map(experience => <MyExperienceCard myExp={experience}></MyExperienceCard>)
         }
