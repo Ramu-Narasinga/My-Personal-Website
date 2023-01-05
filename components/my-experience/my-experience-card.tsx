@@ -33,10 +33,9 @@ export default function MyExperienceCard(myExperienceCardProps: MyExperienceCard
         <div className={myExperienceStyles.experienceCard}>
           <div className={myExperienceStyles.experienceRole}>{role}</div>
           <div className={myExperienceStyles.experienceCompany}>{company}</div>
-          <div className={myExperienceStyles.experienceStartMonth}>{startMonth}</div>
-          <div className={myExperienceStyles.experienceEndMonth}>{endMonth}</div>
+          <div className={myExperienceStyles.experienceMonth}>{startMonth} - {endMonth}</div>
           <div className={myExperienceStyles.experienceDuration}>{duration}</div>
-          <div className={myExperienceStyles.experienceResponsibilties}>{responsibilities.map(responsibility => <div>{responsibility}</div>)}</div>     
+          <div className={myExperienceStyles.experienceResponsibilties}>{responsibilities.map(responsibility => <div> - {responsibility}</div>)}</div>     
         </div>
     </>
   );
