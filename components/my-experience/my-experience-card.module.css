@@ -28,3 +28,10 @@
 .experienceResponsibilties {
   margin-bottom: 1rem;
 }
+
+.experienceTimelineDot {
+  width: 4%;
+  border-bottom: 0.3rem solid;
+  position: relative;
+  top: 12%;
+}

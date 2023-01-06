@@ -1,4 +1,4 @@
-import myExperienceStyles from './my-experience-card.module.css';
+import myExperienceCardStyles from './my-experience-card.module.css';
 
 type MyExperienceCard = {
   role: string,
@@ -14,7 +14,7 @@ type MyExperienceCardProps = {
 }
 
 export default function MyExperienceCard(myExperienceCardProps: MyExperienceCardProps) {
-  
+
   const {
     myExp
   } = myExperienceCardProps;
@@ -29,14 +29,15 @@ export default function MyExperienceCard(myExperienceCardProps: MyExperienceCard
   } = myExp
 
   return (
-    <>      
-        <div className={myExperienceStyles.experienceCard}>
-          <div className={myExperienceStyles.experienceRole}>{role}</div>
-          <div className={myExperienceStyles.experienceCompany}>{company}</div>
-          <div className={myExperienceStyles.experienceMonth}>{startMonth} - {endMonth}</div>
-          <div className={myExperienceStyles.experienceDuration}>{duration}</div>
-          <div className={myExperienceStyles.experienceResponsibilties}>{responsibilities.map(responsibility => <div> - {responsibility}</div>)}</div>     
-        </div>
+    <>
+      <div className={myExperienceCardStyles.experienceTimelineDot}>.</div>
+      <div className={myExperienceCardStyles.experienceCard}>
+        <div className={myExperienceCardStyles.experienceRole}>{role}</div>
+        <div className={myExperienceCardStyles.experienceCompany}>{company}</div>
+        <div className={myExperienceCardStyles.experienceMonth}>{startMonth} - {endMonth}</div>
+        <div className={myExperienceCardStyles.experienceDuration}>{duration}</div>
+        <div className={myExperienceCardStyles.experienceResponsibilties}>{responsibilities.map(responsibility => <div> - {responsibility}</div>)}</div>
+      </div>
     </>
   );
 }

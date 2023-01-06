@@ -1,0 +1,10 @@
+.experienceContainer {
+  height: fit-content;
+  display: flex;
+  justify-content: row;
+  flex-direction: row;
+}
+
+.experienceTimeLine {
+  border-left: 0.35rem solid white;
+}

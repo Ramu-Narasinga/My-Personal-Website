@@ -3,6 +3,7 @@ import Layout from '../components/layout/layout'
 import MyExperienceCard from '../components/my-experience/my-experience-card'
 import { experience } from '../components/my-experience/my-experience-data'
 import CustomDiv from '../components/themed-tags/custom-div/custom-div'
+import experienceStyles from '../styles/experience.module.css';
 
 export default function Experience() {
 
@@ -12,9 +13,14 @@ export default function Experience() {
          My professional experience.
       </CustomH1>
       <CustomDiv>
-        {
-          experience.map(experience => <MyExperienceCard myExp={experience}></MyExperienceCard>)
-        }
+        <div className={experienceStyles.experienceContainer}>
+          <div  className={experienceStyles.experienceTimeLine}></div>
+          <div>
+            {
+              experience.map(experience => <MyExperienceCard myExp={experience}></MyExperienceCard>)
+            }
+          </div>
+        </div>
       </CustomDiv>
     </Layout>
   )
