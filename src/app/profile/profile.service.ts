@@ -35,6 +35,20 @@ export class ProfileService {
       tech: 'HTML, CSS, Vanilla Javascript, LeadlineJs'
     },
   ]
+
+  openSourceProjects:any = [
+    {
+      id: 1,
+      title: 'Nodejs-Mail-Sender',
+      desc: 'An open source wrapper function in typescript that can be used in NodeJs to send emails built on top of nodemailer.',
+      livedemo: 'https://www.npmjs.com/package/nodejs-mail-sender',
+      githurl: 'https://github.com/Ramu-Narasinga/Nodemail-Sender',
+      mediumlink: '',
+      imgUrl: 'assets/images/mail-sender.png',
+      tech: 'NodeJs, Nodemailer, NPM'
+    }
+  ]
+
   about2 = `
   Frontend Developer with 4+ years of experience .
   Expertise in Javascript, Typescript, Angular, React, Cypress, Jest, NodeJs, MySQL .
@@ -189,31 +203,28 @@ Completed my Secondary school with 84%.`
       url: 'https://github.com/Ramu-Narasinga'
     },
   ]
-  // contactus(data: any): Observable<any> {
-  //   return this.http.post(this.baseUrl + 'contact', data);
-  // }
 
   skills(): Observable<any> {
-    // return this.http.get(this.baseUrl + 'skills');
     return this.skillsData;
   }
 
   getProjects(): Observable<any> {
-    // return this.http.get(this.baseUrl + 'skills');
     return this.projects;
   }
+
+  getOpenSourceProjects(): Observable<any> {
+    return this.openSourceProjects;
+  }
+
   education(): Observable<any> {
-    // return this.http.get(this.baseUrl + 'education');
     return this.educationData;
   }
 
   exprience(): Observable<any> {
-    // return this.http.get(this.baseUrl + 'exprience');
     return this.exprienceData;
   }
 
   extraCircular(): Observable<any> {
-    // return this.http.get(this.baseUrl + 'exprience');
     return this.extraCircularInfo;
   }
 }

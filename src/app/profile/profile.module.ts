@@ -16,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { SplitPipe } from './split.pipe';
 import { ExtraCiricularComponent } from './extra-ciricular/extra-ciricular.component';
+import { OpenSourceProjectsComponent } from './open-source-projects/open-source-projects.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { ExtraCiricularComponent } from './extra-ciricular/extra-ciricular.compo
     ContactComponent,
     ProjectsComponent,
     SplitPipe,
-    ExtraCiricularComponent
+    ExtraCiricularComponent,
+    OpenSourceProjectsComponent
   ],
  
 })
