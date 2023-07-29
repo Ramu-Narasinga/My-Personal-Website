@@ -17,7 +17,7 @@ export class ProfileService {
     {
       id: 1,
       title: 'No Code Website Builder',
-      desc: '',
+      desc: 'Build website, emails and track user sessions',
       livedemo: 'https://no-code-website-builder.web.app/auth/login',
       githurl: 'https://github.com/Ramu-Narasinga/No-Code-Web-Builder',
       mediumlink: '',
@@ -26,8 +26,8 @@ export class ProfileService {
     },
     {
       id: 2,
-      title: 'Workflow Demo',
-      desc: '',
+      title: 'Leaderline.js Integration With Pure HTML/CSS/JS',
+      desc: 'An example showing how to configure leaderline library',
       livedemo: 'https://hzsr9k.csb.app/',
       githurl: 'https://github.com/Ramu-Narasinga/zuuba-fe-design',
       mediumlink: '',
@@ -46,7 +46,17 @@ export class ProfileService {
       mediumlink: '',
       imgUrl: 'assets/images/mail-sender.png',
       tech: 'NodeJs, Nodemailer, NPM'
-    }
+    }, 
+    {
+      id: 2,
+      title: 'Views Count',
+      desc: 'Show views count on any website or markdown',
+      livedemo: 'https://projects.ramunarasinga.com/',
+      githurl: 'https://github.com/Ramu-Narasinga/visitors-count',
+      mediumlink: '',
+      imgUrl: 'assets/images/views-count.png',
+      tech: 'HTML, CSS, Vanilla Javascript, LeadlineJs'
+    },
   ]
 
   about2 = `
